@@ -1,0 +1,135 @@
+<!-- Create an HTML form that collects user information. 
+ The form should include: 
+ - Different input types (text, email, password, checkbox, radio buttons, etc.) 
+ - Proper labels for each input 
+ - Fieldsets and legends for grouping related inputs 
+ - A submit button 
+ - Form validation attributes-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info Form</title>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to User Information Form</h1>
+      <form>
+        <div>
+          <h2>Personal Information</h2>
+          <div>
+            <label>Full name:</label>
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Enter your full name"
+            />
+          </div>
+          <br />
+          <div>
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <br />
+          <div>
+            <label>Age:</label>
+            <input
+              type="number"
+              name="age"
+              required
+              placeholder="Enter your age"
+            />
+          </div>
+          <br />
+          <div>
+            <label>Birthday:</label>
+            <input
+              type="date"
+              name="bday"
+              required
+              placeholder="Enter your birthday"
+            />
+          </div>
+          <br />
+          <div>
+            <label>Gender:</label><br />
+            <div>
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" value="others" id="others" />
+              <label for="others">Others</label>
+            </div>
+          </div>
+          <br />
+        </div>
+
+        <div>
+          <h2>Account Details</h2>
+          <div>
+            <label>Username</label>
+            <input
+              type="text"
+              name="username"
+              required
+              placeholder="Enter your username"
+            />
+          </div>
+          <br />
+          <div>
+            <label>Password:</label>
+            <input
+              type="password"
+              name="password"
+              required
+              placeholder="Enter your password"
+              minlength="6"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2>Preferences or Skills</h2>
+          <div>
+            <input type="checkbox" name="skill" value="python" id="python" />
+            <label>Python</label>
+          </div>
+          <br />
+          <div>
+            <input type="checkbox" name="skill" value="html" id="html" />
+            <label for="html">HTML</label>
+          </div>
+          <br />
+          <div>
+            <input type="checkbox" name="skill" value="css" id="css" />
+            <label for="css">CSS</label>
+          </div>
+          <br />
+          <div>
+            <input
+              type="checkbox"
+              name="skill"
+              value="javascript"
+              id="javascript"
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
