@@ -1,0 +1,172 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 14px 0 0 20px;
+    flex-grow: 1;
+    color: royalblue;
+    
+}
+
+.main-header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px 0, rgba(0, 0, 0, 0.25) 0 6px 12px 0;
+    min-height: 50px;
+}
+
+.main-nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 0;
+}
+
+.main-nav li {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav li:hover {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+.main-nav li:active {
+    background-color: blue;
+}
+
+.main-nav {
+    flex-grow: 2;
+    align-self: center;
+    font-size: 18px;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-sidebar {
+    background-color: transparent;
+    margin-right: 5px;
+    height: 300vh;
+}
+
+.sidebar-section {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.sidebar-section a {
+    text-decoration: none;
+    color: black;
+    background-color: red;
+}
+
+.sidebar-section > li {
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-section > li:hover{
+    cursor: pointer;
+    background-color: royalblue;
+}
+
+.sidebar-section > li:active{
+    background-color: blue;
+}
+
+.sidebar-module-link {
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.sidebar-module-link:hover {
+    color: white;
+}
+
+.main-content {
+    padding: 20px 20px 20px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.module-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.module-1:hover {
+    background-color: azure;
+}
+
+.module-1 h2, h3  {
+    margin: 0;
+}
+
+.module-1 h2 {
+    margin-top: 10px;
+}
+
+.module-1 h3 {
+    font-weight: 400;
+}
+
+.module-links-video {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.module-links-video img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid black;
+}
+
+@media(max-width: 600px){
+    .main-header{
+        flex-direction: column;
+    }
+
+    .main-nav > ul {
+        gap: 10px;
+    }
+
+    .sidebar-section {
+        width: 20%;
+    }
+
+    .main-content {
+        padding-left: 20%;
+    }
+
+
+}

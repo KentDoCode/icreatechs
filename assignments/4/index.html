@@ -1,0 +1,151 @@
+<!-- Create a responsive layout using Flexbox. 
+Your layout should include: 
+- A header with navigation menu 
+- A main content area with multiple sections 
+- A sidebar 
+- A footer 
+- Responsive design that looks good on both desktop and mobile-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Fundamentals</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>WebDev Journey</h1>
+      <nav class="main-nav">
+        <ul>
+          <li>Home</li>
+          <li>Modules</li>
+          <li>About Me</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <aside class="main-sidebar">
+        <ul class="sidebar-section">
+          <li>
+            <a href="#module1">
+              <div class="sidebar-module-link">
+                First Module
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#module2">
+              <div class="sidebar-module-link">
+                Second Module
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#module3">
+              <div class="sidebar-module-link">
+                Third Module
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#module4">
+              <div class="sidebar-module-link">
+                Fourth Module
+              </div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="main-content">
+        <section class="module-1" id="module1">
+          <h2>Module 1</h2>
+          <h3>Introduction to HTML</h3>
+          <div class="module-description">
+            In this module, I learned about the fundamentals of HTML. This
+            includes the proper HTML5 document structure, headings, paragraphs,
+            lists, links, images, and more.
+          </div>
+          <div class="module-description">
+            Below is the video I watched in completing this module.
+
+          </div>
+          <div class="module-links-video">
+            <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU&t=6s" target="_blank">
+              <img src="../4/images/module1.webp" />
+            </a>
+          </div>
+        </section>
+
+        <section class="module-1" id="module2">
+          <h2>Module 2</h2>
+          <h3>HTML Deep Dive</h3>
+          <div class="module-description">
+            In this module, I learned about semantic HTML, HTML forms, and
+            exploring about HTML tables.
+          </div>
+          <div class="module-description">
+            Below is the video I watched in completing this module.
+
+          </div>
+          <div class="module-links-video">
+            <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">
+              <img
+                src="../4/images/module2.webp"
+              />
+            </a>
+          </div>
+        </section>
+
+        <section class="module-1" id="module3">
+          <h2>Module 3</h2>
+          <h3>Introduction to CSS</h3>
+          <div class="module-description">
+            In this module, I learned about CSS syntax, the different ways to
+            add CSS styles, and even learned about the CSS box model.
+          </div>
+          <div class="module-description">
+            Below is the video I watched in completing this module.
+          </div>
+          <div class="module-links-video">
+  
+            <a href="https://www.youtube.com/watch?v=yfoY53QXEnI&t=4355s" target="_blank">
+              <img
+                src="../4/images/module3.webp"
+              />
+            </a>
+          </div>
+        </section>
+
+        <section class="module-1" id="module4">
+          <h2>Module 4</h2>
+          <h3>CSS Layout Techniques</h3>
+          <div class="module-description">
+            In this module, I learned about CSS display property, the CSS
+            positioning (static, relative, absolute, fixed, and sticky), and
+            aven the CSS flexbox.
+          </div>
+          <div class="module-description">
+            Below is the video I watched in completing this module.
+
+          </div>
+          <div class="module-links-video">
+            <a href="https://www.youtube.com/watch?v=jx5jmI0UlXU&t=330s" target="_blank">
+              <img
+                src="../4/images/module4.webp"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Kent Villalun &copy; Built using flexbox while learning web dev with
+      ICreatechs.
+    </footer>
+  </body>
+</html>
