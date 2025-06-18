@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="/icreatechs/assignments/6/css/style.css" />
+  </head>
+  <body>
+    
+    <div class="card-calculator">
+      <h1>Simple Calculator</h1>
+      <form onsubmit="event.preventDefault();calculate()" class="form">
+        <div class="input-container">
+          <div class="input">
+            <input type="number" step="any" required placeholder="Enter first number" id="num1">
+            <input type="number" step="any" required placeholder="Enter second number" id="num2">
+          </div>
+
+          <div class="operator-container">
+            <h3>Choose your operator: <span id="selectedOperator"></span></h3>
+            <div class="operators">
+              <button onclick="setOperator('+')" class="operator">+</button>
+              <button onclick="setOperator('-')" class="operator">-</button>
+              <button onclick="setOperator('*')" class="operator">x</button>
+              <button onclick="setOperator('/')" class="operator">/</button>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button type="submit">Calculate</button>
+            <button type="button" onclick="clearCalculate()">Reset</button>
+          </div>
+        </div>
+      </form>
+      <p id="result"></p>
+    </div>
+    <script src="/icreatechs/assignments/6/js/script.js"></script>
+    
+  </body>
+</html>

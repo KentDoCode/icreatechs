@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-calculator > h1 {
+    color: royalblue;
+}
+
+.card-calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px 0, rgba(0, 0, 0, 0.25) 0 6px 12px 0;
+    border-radius: 25px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input > input {
+    border: none;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+}
+
+.input > input:hover {
+    background-color: aliceblue;
+}
+
+.operator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.operator-container > h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.operators {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.operators > button {
+    padding: 10px;
+    vertical-align: bottom;
+    padding: 10px 38px;
+    border: none;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.operators > button:hover {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+.operators > button:active {
+    background-color: lightcyan;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons > button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: royalblue;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.buttons > button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.buttons > button:active {
+    background-color: darkblue;
+}
